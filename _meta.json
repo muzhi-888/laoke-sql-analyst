@@ -1,0 +1,25 @@
+{
+  "name": "laoke-sql-analyst",
+  "slug": "laoke-sql-analyst",
+  "displayName": "SQL 数据分析助手",
+  "version": "1.0.0",
+  "author": "局内人·老K",
+  "category": "数据分析",
+  "tags": ["SQL", "数据分析", "查询生成", "SQL审查", "注入防范", "优化"],
+  "description": "通用 SQL 数据分析助手，把自然语言转成可运行的 SQL，配套方言速查、查询优化、窗口函数与注入防范方法论，并内置纯标准库静态检查器扫描 SELECT 星号删改无 WHERE 笛卡尔积与注入风险",
+  "compatibility": "通用（支持 Skill 的 Agent：Claude Code / CodeBuddy / DeepSeek / WorkBuddy 等）",
+  "license": "MIT",
+  "homepage": "",
+  "repository": "",
+  "createdAt": "2026-09-08",
+  "entry": "SKILL.md",
+  "scripts": ["scripts/sql_lint.py"],
+  "references": [
+    "references/01_SQL方言速查.md",
+    "references/02_查询优化基础.md",
+    "references/03_窗口函数与CTE.md",
+    "references/04_常见反模式与陷阱.md",
+    "references/05_安全与注入防范.md"
+  ],
+  "hooks": ["hooks/guardrail.md"]
+}
